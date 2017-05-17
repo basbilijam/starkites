@@ -172,6 +172,10 @@ hr {
   }
 }
 
+.navbar-collapse.in {
+  background-color: white;
+}
+
 .navbar-default .navbar-nav>.active>a {
   background-color: transparent;
   text-decoration: underline;
