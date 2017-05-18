@@ -201,9 +201,13 @@ hr {
 
 .carousel-caption {
   text-shadow: none;
+  margin-top: 25%;
+  background-color: transparent;
+  font-family: 'Raleway', sans-serif;
 }
 
 .full-screen {
+  height:90vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -214,14 +218,19 @@ hr {
   margin-top: 25%;
   background-color: transparent;
   font-family: 'Raleway', sans-serif;
-  /*border: 5px solid white;
-  border-radius: 2px;*/
 }
 
 .jumbotron h1 {
   font-weight: 800;
   letter-spacing: 1px;
   font-size: 600%;
+}
+
+@media (max-width: 767px) {
+  .jumbotron h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
 }
 
 .main-button {
@@ -241,7 +250,7 @@ hr {
 .parallax {
     margin-top: 5%;
     background-image: url("../img/parallax/gopro.jpg");
-    height: 500px;
+    height: 400px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
