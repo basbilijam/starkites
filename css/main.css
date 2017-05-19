@@ -213,7 +213,7 @@ hr {
 
 .full-screen {
   background-image: url("../img/landing-carousel/fly.jpg");
-  height:100vh;
+  height:100%;
   width:100%;
   background-size: cover;
   background-position: center;
@@ -222,19 +222,25 @@ hr {
 }
 
 .overlay {
-  margin-top: -10%;
-  margin-left: 65%;
   height:200px;
 }
 .overlay img {
+  display: block;
+  margin: auto;
   height:100%;
-
 }
 
 @media (max-width: 767px) {
   .overlay {
-    margin-top: -5%;
-    height:100px;
+    /*margin-top: -5%;*/
+    /*margin-top: 15%;*/
+    height:150px;
+  }
+}
+@media (max-width: 767px) {
+  .overlay img {
+
+    margin-top: 15%;
   }
 }
 
@@ -267,7 +273,7 @@ hr {
 }
 
 .main-button {
-  margin-top: 15%;
+  margin-top: 25%;
   font-family: 'Raleway', sans-serif;
   border: 5px solid white;
   background-color: transparent;
@@ -282,12 +288,18 @@ hr {
   font-weight: bold;
 }
 
+@media (max-width: 767px) {
+  .main-button {
+    margin-top: 40%;
+  }
+}
+
 /*Parallax section*/
 
 .parallax-car {
     margin-top: 5%;
     height: 100vh;
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

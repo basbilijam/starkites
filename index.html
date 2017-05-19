@@ -30,7 +30,6 @@
 
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
@@ -41,7 +40,6 @@
           <a href="#home" class="navbar-left"><img src="./img/logo/starkiteslogo.jpg" class="img-responsive" style="height: 60px"></a>
         </div>
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right text-uppercase">
             <li class="active"><a href="#home">Home<span class="sr-only">(current)</span></a></li>
@@ -67,12 +65,11 @@
     <div class="container-fluid">
       <div class="row">
         <div class="full-screen parallax-car">
-          <div class="jumbotron text-center">
-            <h1 class="caption text-uppercase">Star Kiteboarding NL</h1>
-            <p class="caption"><a href="#products" class="btn btn-primary main-button">KOOP NU!</a></p>
-          </div>
-          <div class="overlay">
+          <div class="overlay text-center">
             <img class="img-responsive" src="img/logo/starkiteslogo.jpg" alt="">
+          </div>
+          <div class="text-center">
+            <p class="caption"><a href="#products" class="btn btn-primary main-button">NAAR PRODUCTEN!</a></p>
           </div>
         </div>
       </div>
@@ -201,21 +198,21 @@
           <hr>
             <div class="col-lg-8 col-lg-offset-2">
               <p class="text-center contact-text">Stuur ons een berichtje via dit formulier als je meer info wilt over een van onze producten, of als je iets wilt bestellen. Wij zullen dan zo snel mogelijk contact met je opnemen! Als je interesse hebt in meerdere producten, dan kunnen we natuurlijk een mooie pakketkorting voor je organiseren!</p>
-              <form id="contact-form" method="post" action="contact.php" role="form">
+              <form id="contact-form" method="post" action="https://formspree.io/jornveenstra1@gmail.com" method="POST">
                 <div class="messages"></div>
                 <div class="controls">
                   <div class="row">
                     <div class="col-md-6">
                       <div class="form-group">
                         <label for="form_name">Naam *</label>
-                        <input id="form_name" type="text" name="name" class="form-control" required="required" data-error="Naam is een verplicht veld.">
+                        <input id="form_name" type="text" name="naam" class="form-control" required="required" data-error="Naam is een verplicht veld.">
                         <div class="help-block with-errors"></div>
                       </div>
                     </div>
                     <div class="col-md-6">
                       <div class="form-group">
                         <label for="form_lastname">Achternaam *</label>
-                        <input id="form_lastname" type="text" name="surname" class="form-control" required="required" data-error="Achternaam is een verplicht veld.">
+                        <input id="form_lastname" type="text" name="achternaam" class="form-control" required="required" data-error="Achternaam is een verplicht veld.">
                         <div class="help-block with-errors"></div>
                       </div>
                     </div>
@@ -231,7 +228,7 @@
                     <div class="col-md-6">
                       <div class="form-group">
                           <label for="form_phone">Telefoon</label>
-                          <input id="form_phone" type="tel" name="phone" class="form-control">
+                          <input id="form_phone" type="tel" name="telefoon" class="form-control">
                           <div class="help-block with-errors"></div>
                       </div>
                     </div>
@@ -240,7 +237,7 @@
                     <div class="col-md-12">
                       <div class="form-group">
                         <label for="form_message">Bericht *</label>
-                        <textarea id="form_message" name="message" class="form-control" rows="4" required="required" data-error="Typ hier je bericht"></textarea>
+                        <textarea id="form_message" name="bericht" class="form-control" rows="4" required="required" data-error="Typ hier je bericht"></textarea>
                         <div class="help-block with-errors"></div>
                       </div>
                     </div>
