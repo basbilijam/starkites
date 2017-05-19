@@ -1,11 +1,5 @@
 /*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
 
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
@@ -99,6 +93,9 @@ html,body {
   height:100%;
   margin:0;
   font-family: 'Raleway', sans-serif;
+}
+* {
+  box-sizing: border-box;
 }
 
 hr {
@@ -247,6 +244,15 @@ hr {
 
 /*Parallax section*/
 
+.parallax-car {
+    margin-top: 5%;
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .parallax {
     margin-top: 5%;
     background-image: url("../img/parallax/gopro.jpg");
@@ -255,6 +261,12 @@ hr {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+@media (max-width: 767px) {
+  .parallax {
+    height: 250px;
+  }
 }
 
 /*Products section*/
@@ -321,15 +333,20 @@ a.product_name {
 	-ms-transition: 0.7s all;
 }
 
-
 /*About section*/
 
 #about {
   margin-top: 5%;
 }
 
+.video-description {
+  margin-top: 50px;
+  height: 30px;
+}
+
 iframe {
-  margin: 0 auto;
+  margin-top:2%;
+  margin-bottom: 2%;
 }
 
 /*contact section*/
@@ -442,6 +459,22 @@ footer {
 .order-button {
   color:white;
   background-color: rgba(162, 188, 224, 1));
+}
+
+.price {
+  float: right;
+}
+
+@media only screen and (min-width: 767px) and (max-width: 991px){
+  .price {
+    float: left;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  .price {
+    float: left;
+  }
 }
 
 .picture-grid {

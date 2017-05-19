@@ -48,9 +48,9 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gear<span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="taina.html">Taina Kite</a></li>
+                <li><a href="taina.html">Taina</a></li>
                 <li role="separator" class="divider"></li>
-                <li><a href="sirius.html">Sirius V2 Kite</a></li>
+                <li><a href="sirius.html">Sirius</a></li>
                 <li role="separator" class="divider"></li>
                 <li><a href="cruz.html">Cruz Board</a></li>
                 <li role="separator" class="divider"></li>
@@ -76,7 +76,7 @@
 
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
-        <div class="item parallax">
+        <div class="item parallax-car">
           <img src="img/landing-carousel/green.jpg" alt="Starkites-1">
           <div class="carousel-caption">
             <div class="jumbotron text-center">
@@ -87,7 +87,7 @@
             </div>
           </div>
         </div>
-        <div class="item parallax">
+        <div class="item parallax-car">
           <img src="img/landing-carousel/fly.jpg" alt="Starkites-2">
           <div class="carousel-caption">
             <div class="jumbotron text-center">
@@ -98,7 +98,7 @@
             </div>
           </div>
         </div>
-        <div class="item parallax">
+        <div class="item parallax-car">
           <img src="img/landing-carousel/blue.jpg" alt="Starkites-3">
           <div class="carousel-caption">
             <div class="jumbotron text-center">
@@ -134,16 +134,16 @@
           <div class="mask">
             <a href="taina.html">Bekijken</a>
           </div>
-          <a class="product_name" href="taina.html">Taina Kite</a>
-          <p><span>€500</span></p>
+          <a class="product_name" href="taina.html">Taina v6</a>
+          <p><span>Vanaf €860</span></p>
         </div>
         <div class="col-md-3 col-sm-6 product text-center">
           <a href="sirius.html"><img src="./img/product/sirius-kite.jpg" alt="" /></a>
 					<div class="mask">
 						<a href="sirius.html">Bekijken</a>
 					</div>
-					<a class="product_name" href="sirius.html">Sirius Kite</a>
-          <p><span>€500</span></p>
+					<a class="product_name" href="sirius.html">Sirius v2</a>
+          <p><span>Vanaf €1000</span></p>
         </div>
         <div class="col-md-3 col-sm-6 product text-center">
           <a href="cruz.html"><img src="./img/product/board.jpg" alt="" /></a>
@@ -151,33 +151,30 @@
             <a href="cruz.html">Bekijken</a>
           </div>
           <a class="product_name" href="cruz.html">Cruz Board</a>
-          <p><span>€500</span></p>
+          <p><span>€650</span></p>
         </div>
         <div class="col-md-3 col-sm-6 product text-center">
           <a href="elite.html"><img src="./img/product/bar.jpg" alt="" /></a>
           <div class="mask">
             <a href="elite.html">Bekijken</a>
           </div>
-          <a class="product_name" href="elite.html">Elite Bar</a>
-          <p><span>€500</span></p>
+          <a class="product_name" href="elite.html">Elite Bar V3</a>
+          <p><span>€430</span></p>
         </div>
       </div>
     </div>
 
-    <div id="about" class="row">
-      <h1 class="text-center">Over Starkites</h1>
-      <hr>
-      <div class="clearfix"></div>
-      <div id="about" class="row">
-        <div class="container">
-          <div class="col-md-6">
-            <p>In the video you can see Vasilia and Rocky testing out the new STAR 2017 gear in the perfect flat water spot called Laboca.</p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/uhronS-ak9U" frameborder="0" allowfullscreen></iframe>
-          </div>
-          <div class="col-md-6">
-            <p>Rocky Chatwell testing our Sirius V2 freestyle kite (Maniacal Colossal Megalodon Loop (2017).</p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/JXHpQ1RJZs8" frameborder="0" allowfullscreen></iframe>
-          </div>
+    <div id="about" class="container">
+      <div class="row">
+        <h1 class="text-center">Over Starkites</h1>
+        <hr>
+        <div class="col-md-6">
+          <p class="video-description">In deze video kun je de teamriders Vasilisa en Rocky het nieuwe 2017 materiaal zien testen op de vlakwaterspot La Boca, Cabarete, Dominicaanse Republiek.</p>
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/uhronS-ak9U" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="col-md-6">
+          <p class="video-description">Hier zie je Rocky Chatwell onze nieuwe Sirius v2 freestyle kite testen.</p>
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/JXHpQ1RJZs8" frameborder="0" allowfullscreen></iframe>
         </div>
       </div>
     </div>
@@ -192,7 +189,7 @@
           <h1 class="text-center">Contact en bestellen</h1>
           <hr>
             <div class="col-lg-8 col-lg-offset-2">
-              <p class="text-center contact-text">Stuur ons een berichtje via dit formulier als je meer info wilt over een van onze producten, of als je iets wilt bestellen. Wij zullen dan zo snel mogelijk contact met je opnemen!</p>
+              <p class="text-center contact-text">Stuur ons een berichtje via dit formulier als je meer info wilt over een van onze producten, of als je iets wilt bestellen. Wij zullen dan zo snel mogelijk contact met je opnemen! Als je interesse hebt in meerdere producten, dan kunnen we natuurlijk een mooie pakketkorting voor je organiseren!</p>
               <form id="contact-form" method="post" action="contact.php" role="form">
                 <div class="messages"></div>
                 <div class="controls">
