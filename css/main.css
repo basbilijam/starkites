@@ -192,7 +192,7 @@ hr {
   border-top-right-radius: 10px;
 }*/
 
-.carousel-control.left, .carousel-control.right  {
+/*.carousel-control.left, .carousel-control.right  {
   background-image: none;
 }
 
@@ -201,52 +201,92 @@ hr {
   margin-top: 25%;
   background-color: transparent;
   font-family: 'Raleway', sans-serif;
-}
+}*/
+
+/*.full-screen {
+  height:90vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+}*/
 
 .full-screen {
-  height:90vh;
+  background-image: url("../img/landing-carousel/fly.jpg");
+  height:100vh;
+  width:100%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   z-index: 0;
 }
 
-.jumbotron {
-  margin-top: 25%;
-  background-color: transparent;
-  font-family: 'Raleway', sans-serif;
+.overlay {
+  margin-top: -10%;
+  margin-left: 65%;
+  height:200px;
+}
+.overlay img {
+  height:100%;
+
 }
 
+@media (max-width: 767px) {
+  .overlay {
+    margin-top: -5%;
+    height:100px;
+  }
+}
+
+.caption {
+  text-shadow: none;
+  background-color: transparent;
+  letter-spacing: 1px;
+}
+
+.jumbotron {
+  background-color: transparent;
+}
+
+
 .jumbotron h1 {
+  font-family: 'Francois One', sans-serif;
   font-weight: 800;
   letter-spacing: 1px;
   font-size: 600%;
+  color:white;
 }
 
 @media (max-width: 767px) {
   .jumbotron h1 {
     font-size: 2.5rem;
+    font-weight: 600;
+    font-size: 400%;
     text-align: center;
   }
 }
 
 .main-button {
+  margin-top: 15%;
+  font-family: 'Raleway', sans-serif;
   border: 5px solid white;
   background-color: transparent;
   border-radius: 2px;
+  color: white;
 }
 
 .main-button:hover {
   background-color: transparent;
   border-color: black;
   color: black;
+  font-weight: bold;
 }
 
 /*Parallax section*/
 
 .parallax-car {
     margin-top: 5%;
-    height: 400px;
+    height: 100vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -255,7 +295,7 @@ hr {
 
 .parallax {
     margin-top: 5%;
-    background-image: url("../img/parallax/gopro.jpg");
+    background-image: url("../img/landing-carousel/green.jpg");
     height: 400px;
     background-attachment: fixed;
     background-position: center;
@@ -266,6 +306,12 @@ hr {
 @media (max-width: 767px) {
   .parallax {
     height: 250px;
+  }
+}
+
+@media (max-width: 767px) {
+  .parallax-car {
+    height: 550px;
   }
 }
 
@@ -341,7 +387,7 @@ a.product_name {
 
 .video-description {
   margin-top: 50px;
-  height: 30px;
+  height: 40px;
 }
 
 iframe {
