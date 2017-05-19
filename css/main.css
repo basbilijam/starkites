@@ -212,7 +212,7 @@ hr {
 }*/
 
 .full-screen {
-  background-image: url("../img/landing-carousel/fly.jpg");
+  background-image: url("../img/landing-carousel/green.jpg");
   height:100%;
   width:100%;
   background-size: cover;
@@ -224,6 +224,7 @@ hr {
 .overlay {
   height:200px;
 }
+
 .overlay img {
   display: block;
   margin: auto;
@@ -252,7 +253,6 @@ hr {
 .jumbotron {
   background-color: transparent;
 }
-
 
 .jumbotron h1 {
   font-family: 'Francois One', sans-serif;
@@ -306,7 +306,7 @@ hr {
 
 .parallax {
     margin-top: 5%;
-    background-image: url("../img/landing-carousel/green.jpg");
+    background-image: url("../img/landing-carousel/fly.jpg");
     height: 400px;
     background-attachment: fixed;
     background-position: center;
