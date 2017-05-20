@@ -170,7 +170,7 @@ hr {
 }
 
 .navbar-collapse.in {
-  background-color: white;
+  background-color: #F8F8F8;
 }
 
 .navbar-default .navbar-nav>.active>a {
@@ -213,7 +213,7 @@ hr {
 
 .full-screen {
   background-image: url("../img/landing-carousel/green.jpg");
-  height:100%;
+  height:80%;
   width:100%;
   background-size: cover;
   background-position: center;
@@ -250,7 +250,7 @@ hr {
   letter-spacing: 1px;
 }
 
-.jumbotron {
+/*.jumbotron {
   background-color: transparent;
 }
 
@@ -260,7 +260,7 @@ hr {
   letter-spacing: 1px;
   font-size: 600%;
   color:white;
-}
+}*/
 
 @media (max-width: 767px) {
   .jumbotron h1 {
