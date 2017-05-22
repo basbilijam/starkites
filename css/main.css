@@ -287,8 +287,7 @@ hr {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    /*background-size: cover;*/
-    background-size: 100%;
+    background-size: cover;
 }
 
 @media (max-width: 767px) {
@@ -300,6 +299,12 @@ hr {
 @media (max-width: 767px) {
   .parallax-car {
     height: 550px;
+  }
+}
+
+@media (max-width:640px) {
+  .parallax {
+    background-attachment:initial;
   }
 }
 
