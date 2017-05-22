@@ -1,30 +1,4 @@
 $(document).ready(function(){
-  // carousel
-  var $item = $('.carousel .item');
-  var $wHeight = $(window).height();
-  $item.eq(0).addClass('active');
-  $item.height($wHeight);
-  $item.addClass('full-screen');
-
-  $('.carousel img').each(function() {
-  var $src = $(this).attr('src');
-  var $color = $(this).attr('data-color');
-  $(this).parent().css({
-    'background-image' : 'url(' + $src + ')',
-    'background-color' : $color
-  });
-  $(this).remove();
-  });
-
-  $(window).on('resize', function (){
-  $wHeight = $(window).height();
-  $item.height($wHeight);
-  });
-
-  $('.carousel').carousel({
-  interval: 6000,
-  pause: "false"
-  });
 
   // navbar active item
   $(".nav a").on("click", function(){
@@ -32,17 +6,14 @@ $(document).ready(function(){
    $(this).parent().addClass("active");
  });
 
-   ////// slow scroll to anchors on main page //
-  // $(document).on('click', 'a', function(event){
-  //   event.preventDefault();
-  //   $('html, body').animate({
-  //     scrollTop: $( $.attr(this, 'href') ).offset().top
-  //   }, 500);
-  // });
+ // collapse navbar after link is clicked
+ $(".navbar-nav li a").click(function(event) {
+    if (!$(this).parent().hasClass('dropdown'))
+        $(".navbar-collapse").collapse('hide');
+});
 });
 
-
-// zoom in on product pictures
+//////// zoom in on product pictures
 // first product picture
 var modal = document.getElementById('myModal');
 

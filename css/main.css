@@ -110,6 +110,12 @@ hr {
   margin: auto;
 }
 
+/*offsetting anchors from navbar (navbar not overlapping headers)*/
+
+.section:target {
+    padding-top: 80px;
+}
+
 /*navbar styles*/
 
 .navbar {
@@ -183,33 +189,7 @@ hr {
   color:rgba(82, 153, 211, 1);
 }
 
-/*jumbotron and carousel*/
-
-/*h3 {
-  display: inline-block;
-  padding: 10px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}*/
-
-/*.carousel-control.left, .carousel-control.right  {
-  background-image: none;
-}
-
-.carousel-caption {
-  text-shadow: none;
-  margin-top: 25%;
-  background-color: transparent;
-  font-family: 'Raleway', sans-serif;
-}*/
-
-/*.full-screen {
-  height:90vh;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: 0;
-}*/
+/*main page with full page image*/
 
 .full-screen {
   background-image: url("../img/landing-carousel/green.jpg");
@@ -249,18 +229,6 @@ hr {
   background-color: transparent;
   letter-spacing: 1px;
 }
-
-/*.jumbotron {
-  background-color: transparent;
-}
-
-.jumbotron h1 {
-  font-family: 'Francois One', sans-serif;
-  font-weight: 800;
-  letter-spacing: 1px;
-  font-size: 600%;
-  color:white;
-}*/
 
 @media (max-width: 767px) {
   .jumbotron h1 {
@@ -390,7 +358,7 @@ a.product_name {
 	-ms-transition: 0.7s all;
 }
 
-/*About section*/
+/*media section*/
 
 #about {
   margin-top: 5%;
@@ -511,6 +479,12 @@ footer {
 	font-size:14px;
 	letter-spacing:2px;
 	text-decoration:none;
+}
+
+@media (max-width: 767px) {
+  .product-header {
+    margin-top: 5%;
+  }
 }
 
 .order-button {
