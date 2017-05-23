@@ -308,6 +308,15 @@ hr {
   }
 }
 
+/*about section*/
+#about {
+  margin-top: 5%;
+}
+
+.intro-text {
+  margin-top: 50px;
+}
+
 /*Products section*/
 
 #products {
@@ -374,7 +383,7 @@ a.product_name {
 
 /*media section*/
 
-#about {
+#media {
   margin-top: 5%;
 }
 
